@@ -8,7 +8,7 @@ const Interest = () => {
       <p className="h1-font" style={{ marginBottom: "20px" }}>
         Interest
       </p>
-      <div className="flex">
+      <div className="flex flex-wrap justify-content-center">
         <div className="interest-box">
           <FaMagic className="interest-icon" />
           <p className="h2-font white-font">Building Projects</p>
