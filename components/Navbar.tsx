@@ -1,35 +1,41 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
+import MobileNavbar from "./MobileNavbar";
+
+export const items = [
+  { label: "Home", link: "#" },
+  { label: "About", link: "#about" },
+  { label: "Contact", link: "#contact" },
+  { label: "Interest", link: "#interest" },
+  { label: "Projects", link: "#projects" },
+  { label: "Education", link: "#education" },
+  { label: "Certificates", link: "#certificates" },
+];
 
 const Navbar = () => {
+  const [toggleMobileNavbar, setToggleMobileNavbar] = useState(false);
+
   return (
     <div className="navbar-main">
-      <Link href="#">{`Preyansh's Portfolio`}</Link>
-      <div>
-        <Link className="list-item" href="#">
-          Home
-        </Link>
-        <Link className="list-item" href="#about">
-          About
-        </Link>
-        <Link className="list-item" href="#contact">
-          Contact
-        </Link>
-        <Link className="list-item" href="#interest">
-          Interest
-        </Link>
-        <Link className="list-item" href="#projects">
-          Projects
-        </Link>
-        <Link className="list-item" href="#education">
-          Education
-        </Link>
-        <Link className="list-item" href="#certificates">
-          Certificates
-        </Link>
+      <Link
+        href="#"
+        style={{ fontSize: "19px" }}
+      >{`Preyansh's Portfolio`}</Link>
+      <div className="navbar-item">
+        {items.map((item) => (
+          <Link className="list-item" href={item.link} key={item.label}>
+            {item.label}
+          </Link>
+        ))}
       </div>
-      <BiMenu className="none" />
+      {toggleMobileNavbar && (
+        <MobileNavbar toggleMobileNavbar={() => setToggleMobileNavbar(false)} />
+      )}
+      <BiMenu
+        className="menu-icon"
+        onClick={() => setToggleMobileNavbar(!toggleMobileNavbar)}
+      />
     </div>
   );
 };

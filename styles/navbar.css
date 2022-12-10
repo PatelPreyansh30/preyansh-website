@@ -1,4 +1,4 @@
-.navbar-main{
+.navbar-main {
     display: flex;
     position: fixed;
     width: 100%;
@@ -9,6 +9,47 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.navbar-item {
+    display: block;
+}
+
 .list-item {
     padding: 0 5px;
+}
+
+.list-item:hover {
+    color: rgb(173, 22, 173);
+    transition: 0.3s;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    color: rgb(173, 22, 173);
+    transform: scale(1.2);
+}
+
+.mobile-navbar-main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+    }
 }
