@@ -1,0 +1,31 @@
+.education-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 70px;
+}
+
+.education-sec{
+    flex: 2;
+    margin: 10px;
+}
+
+.education-sec-item {
+    margin: 20px 0;
+    padding: 0 25px 20px 0;
+    border-bottom: 1px solid rgb(173, 22, 173);
+}
+
+.education-item-date {
+    width: fit-content;
+    margin: 5px 0;
+    padding: 5px 10px;
+    color: rgb(173, 22, 173);
+    border: 2px solid rgb(173, 22, 173);
+}
+
+/* @media screen and (max-width: ) and (min-width: ) */
+@media screen and (max-width: 768px ) {
+    .education-main{
+        padding: 30px 20px;
+    }
+}
