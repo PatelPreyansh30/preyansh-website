@@ -18,7 +18,10 @@ const Navbar = () => {
 
   return (
     <div className="navbar-main">
-      <Link href="#">{`Preyansh's Portfolio`}</Link>
+      <Link
+        href="#"
+        style={{ fontSize: "19px" }}
+      >{`Preyansh's Portfolio`}</Link>
       <div className="navbar-item">
         {items.map((item) => (
           <Link className="list-item" href={item.link} key={item.label}>
@@ -27,9 +30,7 @@ const Navbar = () => {
         ))}
       </div>
       {toggleMobileNavbar && (
-        <MobileNavbar
-          toggleMobileNavbar={() => setToggleMobileNavbar(false)}
-        />
+        <MobileNavbar toggleMobileNavbar={() => setToggleMobileNavbar(false)} />
       )}
       <BiMenu
         className="menu-icon"
