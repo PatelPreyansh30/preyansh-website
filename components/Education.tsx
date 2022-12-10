@@ -1,12 +1,31 @@
 import React from "react";
 
+const educationItems = [
+  {
+    eType: "Bachelor Of Technology In Computer Engineering With AI-ML",
+    eName: "Silver Oak University, Gota, Ahmedabad",
+    eYear: "2020-2024",
+    eResult: "CPI: 9.1 (In 5th Semester)",
+  },
+  {
+    eType: "12th(HSC) - PCM",
+    eName: "Gyanda Girls High School, Ghatlodiya, Ahmedabad",
+    eYear: "2019-2020",
+    eResult: "Percentile Rank: 88.39",
+  },
+  {
+    eType: "12th(SSC)",
+    eName: "Gyanda Girls High School, Ghatlodiya, Ahmedabad",
+    eYear: "2017-2018",
+    eResult: "Percentile Rank: 98.37",
+  },
+];
+
 const Education = () => {
   return (
     <div className="education-main" id="education">
       <div className="education-sec">
-        <div className="h1-font" style={{ paddingBottom: "10px" }}>
-          Experience
-        </div>
+        <div className="h1-font">Experience</div>
         <div className="education-sec-item">
           <p className="h2-font purple-font">ReactJS Developer Intern</p>
           <p className="h3-bold-font">Oyebusy Pvt. Ltd.</p>
@@ -24,33 +43,15 @@ const Education = () => {
         </div>
       </div>
       <div className="education-sec">
-        <div className="h1-font" style={{ paddingBottom: "10px" }}>
-          Education
-        </div>
-        <div className="education-sec-item">
-          <p className="h2-font purple-font">
-            Bachelor Of Technology In Computer Engineering With AI-ML
-          </p>
-          <p className="h3-bold-font">Silver Oak University, Gota, Ahmedabad</p>
-          <p className="education-item-date">2020-2024</p>
-          <li className="h3-font">CPI: 9.1 (In 5th Semester)</li>
-        </div>
-        <div className="education-sec-item">
-          <p className="h2-font purple-font">12th(HSC) - PCM</p>
-          <p className="h3-bold-font">
-            Gyanda Girls High School, Ghatlodiya, Ahmedabad
-          </p>
-          <p className="education-item-date">2019-2020</p>
-          <li className="h3-font">Percentile Rank: 88.39</li>
-        </div>
-        <div className="education-sec-item">
-          <p className="h2-font purple-font">12th(SSC)</p>
-          <p className="h3-bold-font">
-            Gyanda Girls High School, Ghatlodiya, Ahmedabad
-          </p>
-          <p className="education-item-date">2017-2018</p>
-          <li className="h3-font">Percentile Rank: 98.37</li>
-        </div>
+        <div className="h1-font">Education</div>
+        {educationItems.map((item, index) => (
+          <div className="education-sec-item" key={`education:${index}`}>
+            <p className="h2-font purple-font">{item.eType}</p>
+            <p className="h3-bold-font">{item.eName}</p>
+            <p className="education-item-date">{item.eYear}</p>
+            <li className="h3-font">{item.eResult}</li>
+          </div>
+        ))}
       </div>
     </div>
   );
