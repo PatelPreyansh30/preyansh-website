@@ -65,6 +65,18 @@
     }
 }
 
+@media screen and (max-width: 768px) and (min-width: 421px) {
+    .aboute-me-skill-box {
+        flex: 3 33%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboute-me-skill-box {
+        flex: 5 20%;
+    }
+}
+
 /* widths */
 .width-95 {
     width: 95%;
