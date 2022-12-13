@@ -21,6 +21,7 @@ const Navbar = () => {
       <Link
         href="#"
         style={{ fontSize: "19px" }}
+        onClick={() => setToggleMobileNavbar(false)}
       >{`Preyansh's Portfolio`}</Link>
       <div className="navbar-item">
         {items.map((item) => (
