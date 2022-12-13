@@ -28,6 +28,27 @@
     padding: 6rem;
 }
 
+.aboute-me-skill-box {
+    padding: 10px 20px;
+    width: 150px;
+    height: 80px;
+    flex: 5 20%;
+}
+
+.aboute-me-skill-full-width {
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.aboute-me-skill-width {
+    margin: 2px 0;
+    padding: 0 6px 0 0;
+    text-align: right;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    background-color: rgb(173, 22, 173);
+}
+
 @media screen and (max-width: 768px) {
     .first-aboute-me-main {
         text-align: center;
@@ -36,4 +57,31 @@
     .aboutme-main {
         padding: 30px 20px;
     }
+}
+
+@media screen and (max-width: 420px) and (min-width: 300px) {
+    .aboute-me-skill-box {
+        flex: 2 50%;
+    }
+}
+
+/* widths */
+.width-95 {
+    width: 95%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-70 {
+    width: 70%;
 }

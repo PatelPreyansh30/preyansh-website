@@ -2,25 +2,8 @@
     display: none;
 }
 
-.grid {
-    display: grid;
-}
-
 .block {
     display: block;
-}
-
-/* float */
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.float-none {
-    float: none;
 }
 
 /* Font-weight */
