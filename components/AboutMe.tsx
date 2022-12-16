@@ -1,47 +1,5 @@
 import React from "react";
-
-const skillSet = [
-  {
-    label: "JavaScript",
-    level: "90",
-  },
-  {
-    label: "TypeScript",
-    level: "80",
-  },
-  {
-    label: "Python",
-    level: "85",
-  },
-  {
-    label: "HTML",
-    level: "95",
-  },
-  {
-    label: "CSS",
-    level: "90",
-  },
-  {
-    label: "ReactJS",
-    level: "90",
-  },
-  {
-    label: "Redux",
-    level: "85",
-  },
-  {
-    label: "NextJS",
-    level: "95",
-  },
-  {
-    label: "Flask",
-    level: "95",
-  },
-  {
-    label: "MySQL",
-    level: "90",
-  },
-];
+import { skillSet } from "../appData/data";
 
 const AboutMe = () => {
   return (

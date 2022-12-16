@@ -1,17 +1,8 @@
-import Link from "next/link";
 import React, { useState } from "react";
+import Link from "next/link";
 import { BiMenu } from "react-icons/bi";
+import { items } from "../appData/data";
 import MobileNavbar from "./MobileNavbar";
-
-export const items = [
-  { label: "Home", link: "#" },
-  { label: "About", link: "#about" },
-  { label: "Contact", link: "#contact" },
-  { label: "Interest", link: "#interest" },
-  { label: "Projects", link: "#projects" },
-  { label: "Education", link: "#education" },
-  { label: "Certificates", link: "#certificates" },
-];
 
 const Navbar = () => {
   const [toggleMobileNavbar, setToggleMobileNavbar] = useState(false);
