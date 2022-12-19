@@ -4,6 +4,7 @@
 @import url('aboutme.css');
 @import url('interest.css');
 @import url('education.css');
+@import url('projects.css');
 
 html,
 body {
@@ -28,6 +29,6 @@ a {
   color: rgb(173, 22, 173);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
-}
+} */

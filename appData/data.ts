@@ -5,9 +5,9 @@ export const items = [
   { label: "Home", link: "#" },
   { label: "About", link: "#about" },
   { label: "Contact", link: "#contact" },
-  { label: "Interest", link: "#interest" },
   { label: "Projects", link: "#projects" },
   { label: "Education", link: "#education" },
+  { label: "Interest", link: "#interest" },
   // { label: "Certificates", link: "#certificates" },
 ];
 

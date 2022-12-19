@@ -28,6 +28,10 @@
     overflow: hidden;
 }
 
+.overflow-auto {
+    overflow: auto;
+}
+
 /* Outline */
 .outline-none {
     outline: none;
