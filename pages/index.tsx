@@ -2,6 +2,7 @@ import Head from "next/head";
 import AboutMe from "../components/AboutMe";
 import Education from "../components/Education";
 import FirstIntro from "../components/FirstIntro";
+import Footer from "../components/Footer";
 import Interest from "../components/Interest";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
@@ -18,6 +19,7 @@ export default function Home() {
       <Interest />
       <Education />
       <Projects />
+      <Footer />
     </>
   );
 }
