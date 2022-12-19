@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { items } from "./Navbar";
+import { items } from "../appData/data";
 
 const MobileNavbar = (props: { toggleMobileNavbar: any }) => {
   return (

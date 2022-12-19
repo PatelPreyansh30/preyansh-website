@@ -1,25 +1,5 @@
 import React from "react";
-
-const educationItems = [
-  {
-    eType: "Bachelor Of Technology In Computer Engineering With AI-ML",
-    eName: "Silver Oak University, Gota, Ahmedabad",
-    eYear: "2020-2024",
-    eResult: "CPI: 9.1 (In 5th Semester)",
-  },
-  {
-    eType: "12th(HSC) - PCM",
-    eName: "Gyanda Girls High School, Ghatlodiya, Ahmedabad",
-    eYear: "2019-2020",
-    eResult: "Percentile Rank: 88.39",
-  },
-  {
-    eType: "12th(SSC)",
-    eName: "Gyanda Girls High School, Ghatlodiya, Ahmedabad",
-    eYear: "2017-2018",
-    eResult: "Percentile Rank: 98.37",
-  },
-];
+import { educationItems } from "../appData/data";
 
 const Education = () => {
   return (

@@ -1,0 +1,34 @@
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 7rem;
+    color: white;
+    background: rgb(34, 34, 34);
+}
+
+.footer-main > hr {
+    width: 100%;
+    color: gray;
+    margin: 20px 0;
+    border-top: 1px solid;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 20px;
+    padding: 15px;
+    margin: 8px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.footer-icons:hover{
+    color: rgb(173, 22, 173);
+    transition: 0.4s;
+}
