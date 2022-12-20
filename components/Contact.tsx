@@ -47,17 +47,17 @@ const Contact = () => {
         </div>
         <div className="contact-sun-sec-main">
           <p className="contact-sub-sec-text">
-            <ImLocation2 style={{ marginRight: "8px" }} /> Ahmedabad, Gujarat
+            <ImLocation2 /> Ahmedabad, Gujarat
           </p>
           <p className="contact-sub-sec-text">
-            <IoIosMail style={{ marginRight: "8px" }} />{" "}
+            <IoIosMail />{" "}
             patelpreyansh3011@gmail.com
           </p>
           <p className="contact-sub-sec-text">
-            <IoMdCall style={{ marginRight: "8px" }} /> +91-123-456-7890
+            <IoMdCall /> +91-123-456-7890
           </p>
           <p className="contact-sub-sec-text">
-            <IoMdInformationCircleOutline style={{ marginRight: "8px" }} />{" "}
+            <IoMdInformationCircleOutline />{" "}
             Download Resume
           </p>
         </div>

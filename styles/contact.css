@@ -55,8 +55,10 @@
 }
 
 .contact-sub-sec-text {
+    width: 100%;
     display: flex;
     align-items: center;
+    overflow-wrap: anywhere;
     font-size: 15px;
     margin-bottom: 15px;
     padding: 20px 10px;
@@ -68,9 +70,23 @@
 
 .contact-sub-sec-text>svg {
     font-size: 22px;
+    margin-right: 4px;
 }
 
 .contact-sub-sec-text:hover {
     color: rgb(173, 22, 173);
     transition: 0.4s;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 300px) {
+    .contact-sun-sec-main {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        margin: 10px;
+    }
+
+    .contact-sec-main {
+        padding: 30px;
+    }
 }
