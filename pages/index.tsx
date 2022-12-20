@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AboutMe from "../components/AboutMe";
+import Contact from "../components/Contact";
 import Education from "../components/Education";
 import FirstIntro from "../components/FirstIntro";
 import Footer from "../components/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
       <Interest />
       <Education />
       <Projects />
+      <Contact />
       <Footer />
     </>
   );
