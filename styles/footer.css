@@ -9,7 +9,7 @@
     background: rgb(34, 34, 34);
 }
 
-.footer-main > hr {
+.footer-main>hr {
     width: 100%;
     color: gray;
     margin: 20px 0;
@@ -28,7 +28,13 @@
     border-radius: 50%;
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
     color: rgb(173, 22, 173);
     transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) and (min-width: 300px) {
+    .footer-main {
+        padding: 30px;
+    }
 }
