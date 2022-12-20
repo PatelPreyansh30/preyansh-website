@@ -11,30 +11,6 @@ const Projects = () => {
       liveLink: "",
       image: cybersecClubWebsiteImg,
     },
-    {
-      title: "Cybersec Club Website",
-      technology: "Using ReactJs, HTML, CSS",
-      liveLink: "",
-      image: cybersecClubWebsiteImg,
-    },
-    {
-      title: "Cybersec Club Website",
-      technology: "Using ReactJs, HTML, CSS",
-      liveLink: "",
-      image: cybersecClubWebsiteImg,
-    },
-    {
-      title: "Cybersec Club Website",
-      technology: "Using ReactJs, HTML, CSS",
-      liveLink: "",
-      image: cybersecClubWebsiteImg,
-    },
-    {
-      title: "Cybersec Club Website",
-      technology: "Using ReactJs, HTML, CSS",
-      liveLink: "",
-      image: cybersecClubWebsiteImg,
-    },
   ];
   return (
     <div id="projects" className="project-sec-main">
