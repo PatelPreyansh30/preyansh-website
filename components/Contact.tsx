@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ImLocation2 } from "react-icons/im";
 import {
   IoIosMail,
@@ -6,7 +6,36 @@ import {
   IoMdInformationCircleOutline,
 } from "react-icons/io";
 
+interface InputFieldInterface {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+const initialState: InputFieldInterface = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+};
+
 const Contact = () => {
+  const [messageData, setMessageData] =
+    useState<InputFieldInterface>(initialState);
+
+  const handleOnChange = (e: any) => {
+    const { name, value } = e.target;
+    setMessageData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const sendMessage = () => {
+    console.log("");
+  };
+
   return (
     <div id="contact" className="contact-sec-main">
       <p className="h1-font" style={{ marginBottom: "20px" }}>
@@ -15,50 +44,38 @@ const Contact = () => {
       <div className="flex flex-wrap justify-content-space-between">
         <div className="contact-sun-sec-main">
           <input
+            value={messageData.name}
+            onChange={handleOnChange}
             type="text"
-            name=""
-            id=""
-            placeholder="Enter your Name"
-            className="contact-sub-sec-input"
-          />
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter your Email"
-            className="contact-sub-sec-input"
-          />
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter your Subject"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
             className="contact-sub-sec-input"
           />
           <textarea
-            name=""
-            id=""
+            value={messageData.message}
+            onChange={handleOnChange}
+            name="message"
+            id="message"
             cols={30}
             rows={3}
-            placeholder="Enter your Message"
+            placeholder="Enter your message"
             className="contact-sub-sec-input"
           ></textarea>
-          <button>Send Message</button>
+          <button onClick={sendMessage}>Send Message</button>
         </div>
         <div className="contact-sun-sec-main">
           <p className="contact-sub-sec-text">
             <ImLocation2 /> Ahmedabad, Gujarat
           </p>
           <p className="contact-sub-sec-text">
-            <IoIosMail />{" "}
-            patelpreyansh3011@gmail.com
+            <IoIosMail /> patelpreyansh3011@gmail.com
           </p>
           <p className="contact-sub-sec-text">
             <IoMdCall /> +91-123-456-7890
           </p>
           <p className="contact-sub-sec-text">
-            <IoMdInformationCircleOutline />{" "}
-            Download Resume
+            <IoMdInformationCircleOutline /> Download Resume
           </p>
         </div>
       </div>
