@@ -31,6 +31,16 @@ a {
   color: rgb(173, 22, 173);
 }
 
-/* ::-webkit-scrollbar {
-  width: 0px;
-} */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 22, 173);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 22, 136);
+}
