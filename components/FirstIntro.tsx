@@ -1,8 +1,10 @@
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import Typewriter from "typewriter-effect";
 import profileImg from "../public/images/Preyansh_Profile.png";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import Link from "next/link";
+import { firstIntroHeadings } from "../appData/data";
 
 const FirstIntro = () => {
   return (
@@ -12,7 +14,7 @@ const FirstIntro = () => {
         src={profileImg}
         style={{
           height: "auto",
-          width: "100px",
+          width: "140px",
           margin: "0 15px",
           border: "solid white",
           borderRadius: "50%",
@@ -21,7 +23,16 @@ const FirstIntro = () => {
       <p className="h1-font" style={{ margin: "14px" }}>
         Hello, {`I'm`} Preyansh Patel
       </p>
-      <p className="h2-font">ReactJS Developer</p>
+      <div className="h2-font">
+        <Typewriter
+          options={{
+            strings: firstIntroHeadings,
+            autoStart: true,
+            loop: true,
+            delay: 150
+          }}
+        />
+      </div>
       <div style={{ marginTop: "15px" }}>
         <Link href="https://github.com/PatelPreyansh30" target="_blank">
           <BsGithub className="first-about-me-icons" />

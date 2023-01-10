@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   const sendMessage = () => {
-    console.log("");
+    console.log(messageData);
   };
 
   return (
@@ -50,6 +50,24 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Enter your name"
+            className="contact-sub-sec-input"
+          />
+          <input
+            value={messageData.email}
+            onChange={handleOnChange}
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            className="contact-sub-sec-input"
+          />
+          <input
+            value={messageData.subject}
+            onChange={handleOnChange}
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter your subject"
             className="contact-sub-sec-input"
           />
           <textarea
