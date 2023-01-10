@@ -1,6 +1,14 @@
 import { ReactNode } from "react";
 import { FaMagic } from "react-icons/fa";
 
+export const firstIntroHeadings = [
+  "ReactJs Developer",
+  "Graphic Designer",
+  "Web Developer",
+  "Web App Developer",
+  "Full Stack Developer",
+]
+
 export const items = [
   { label: "Home", link: "#" },
   { label: "About", link: "#about" },
