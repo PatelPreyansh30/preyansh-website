@@ -7,7 +7,7 @@ export const firstIntroHeadings = [
   "Web Developer",
   "Web App Developer",
   "Full Stack Developer",
-]
+];
 
 export const items = [
   { label: "Home", link: "#" },
@@ -84,6 +84,13 @@ export const skillSet = [
 ];
 
 export const projectItems = [
+  {
+    title: "JSON To UI Converter",
+    technology: "Skills: ReactJS, HTML, CSS, Typescript",
+    description:
+      "This web app convert JSON data into visible UI parts.\n\nIt takes specific JSON data that helps to build the UI.",
+    liveLink: "https://json-to-ui-converter.vercel.app/",
+  },
   {
     title: "Expense Management System",
     technology: "Skills: VueJs, HTML, CSS, Axios",
