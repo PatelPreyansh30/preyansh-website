@@ -28,8 +28,8 @@ a {
 }
 
 ::selection {
-  background-color: white;
   color: rgb(173, 22, 173);
+  background-color: rgb(241, 241, 241);
 }
 
 ::-webkit-scrollbar {
