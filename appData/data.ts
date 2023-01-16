@@ -3,9 +3,9 @@ import { FaMagic } from "react-icons/fa";
 
 export const firstIntroHeadings = [
   "ReactJs Developer",
-  "Graphic Designer",
+  "Python Developer",
   "Web Developer",
-  "Web App Developer",
+  "Graphic Designer",
   "Full Stack Developer",
 ];
 
@@ -99,17 +99,17 @@ export const projectItems = [
     liveLink: "https://github.com/PatelPreyansh30/expense-management-system",
   },
   {
-    title: "Cybersec Club Website",
-    technology: "Skills: ReactJs, HTML, CSS",
-    description:
-      "This website was created for the silver oak cybersec club organized by IEEE silver oak group.",
-    liveLink: "https://ieee-sou-cybersec-event.web.app/",
-  },
-  {
     title: "IEEE SOU Website Updation",
     technology: "Skills: Debugging, VueJs, HTML, CSS, Firebase",
     description:
       "This website was created by our seniors and now we are tasked with updating this website and fixing bugs.",
+    liveLink: "https://ieee-sou-cybersec-event.web.app/",
+  },
+  {
+    title: "Cybersec Club Website",
+    technology: "Skills: ReactJs, HTML, CSS",
+    description:
+      "This website was created for the silver oak cybersec club organized by IEEE silver oak group.",
     liveLink: "https://ieee-sou-cybersec-event.web.app/",
   },
 ];
