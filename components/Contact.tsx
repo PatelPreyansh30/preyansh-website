@@ -21,6 +21,7 @@ const initialState: InputFieldInterface = {
 };
 
 const Contact = () => {
+  const [isEmailSended, setIsEmailSended] = useState(false);
   const [messageData, setMessageData] =
     useState<InputFieldInterface>(initialState);
 
@@ -30,10 +31,12 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
+    setIsEmailSended(false);
   };
 
   const sendMessage = () => {
     console.log(messageData);
+    setIsEmailSended(true)
   };
 
   return (
@@ -80,6 +83,7 @@ const Contact = () => {
             placeholder="Enter your message"
             className="contact-sub-sec-input"
           ></textarea>
+          {isEmailSended && <div className="contact-success-message">Your message sent successfully, We will shortly contact with you.</div>}
           <button onClick={sendMessage}>Send Message</button>
         </div>
         <div className="contact-sun-sec-main">
