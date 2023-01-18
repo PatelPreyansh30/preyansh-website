@@ -78,6 +78,11 @@
     transition: 0.4s;
 }
 
+.contact-success-message {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 300px) {
     .contact-sun-sec-main {
         display: flex;

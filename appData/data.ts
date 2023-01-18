@@ -1,6 +1,3 @@
-import { ReactNode } from "react";
-import { FaMagic } from "react-icons/fa";
-
 export const firstIntroHeadings = [
   "ReactJs Developer",
   "Python Developer",
@@ -11,10 +8,10 @@ export const firstIntroHeadings = [
 
 export const items = [
   { label: "Home", link: "#" },
-  { label: "About", link: "#about" },
-  { label: "Contact", link: "#contact" },
   { label: "Projects", link: "#projects" },
   { label: "Education", link: "#education" },
+  { label: "Contact", link: "#contact" },
+  { label: "About", link: "#about" },
   { label: "Interest", link: "#interest" },
   // { label: "Certificates", link: "#certificates" },
 ];
