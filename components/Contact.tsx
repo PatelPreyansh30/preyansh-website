@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailJs from "@emailjs/browser";
 import { ImLocation2 } from "react-icons/im";
 import {
   IoIosMail,
@@ -6,14 +7,7 @@ import {
   IoMdInformationCircleOutline,
 } from "react-icons/io";
 
-interface InputFieldInterface {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-const initialState: InputFieldInterface = {
+const initialState: any = {
   name: "",
   email: "",
   subject: "",
@@ -22,12 +16,12 @@ const initialState: InputFieldInterface = {
 
 const Contact = () => {
   const [isEmailSended, setIsEmailSended] = useState(false);
-  const [messageData, setMessageData] =
-    useState<InputFieldInterface>(initialState);
+  const [emailSendedMessage, setEmailSendedMessage] = useState("");
+  const [messageData, setMessageData] = useState<any>(initialState);
 
   const handleOnChange = (e: any) => {
     const { name, value } = e.target;
-    setMessageData((prev) => ({
+    setMessageData((prev: any) => ({
       ...prev,
       [name]: value,
     }));
@@ -35,8 +29,27 @@ const Contact = () => {
   };
 
   const sendMessage = () => {
-    console.log(messageData);
-    setIsEmailSended(true)
+    emailJs
+      .send(
+        "service_equ5zbz",
+        "template_jvdemoi",
+        messageData,
+        "HcHtjlZqxWClIRDZ5"
+      )
+      .then(
+        (response) => {
+          setEmailSendedMessage(
+            "Your message sent successfully, We will shortly contact with you."
+          );
+          setIsEmailSended(true);
+        },
+        (err) => {
+          setEmailSendedMessage(
+            "Your message not sent successfully, Please try again."
+          );
+          setIsEmailSended(true);
+        }
+      );
   };
 
   return (
@@ -83,7 +96,9 @@ const Contact = () => {
             placeholder="Enter your message"
             className="contact-sub-sec-input"
           ></textarea>
-          {isEmailSended && <div className="contact-success-message">Your message sent successfully, We will shortly contact with you.</div>}
+          {isEmailSended && (
+            <div className="contact-success-message">{emailSendedMessage}</div>
+          )}
           <button onClick={sendMessage}>Send Message</button>
         </div>
         <div className="contact-sun-sec-main">
