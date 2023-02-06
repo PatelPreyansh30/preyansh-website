@@ -2,7 +2,6 @@ export const firstIntroHeadings = [
   "ReactJs Developer",
   "Python Developer",
   "Web Developer",
-  "Graphic Designer",
   "Full Stack Developer",
 ];
 
@@ -81,6 +80,13 @@ export const skillSet = [
 ];
 
 export const projectItems = [
+  {
+    title: "E Commerce Web-App",
+    technology: "Skills: ReactJS, Typescript, Material Ui, Tailwind CSS, Python(Flask)",
+    description:
+      "This web app copy of e-commerce website in where you will show products, buy a product, manage your user settings, and many more.\n\nI handle the some part of backend and build some useful APIs in Python(Flask).\n\nAlso, handle some frontend part for creating amazing UI for smooth user experiance.",
+    liveLink: "",
+  },
   {
     title: "JSON To UI Converter",
     technology: "Skills: ReactJS, HTML, CSS, Typescript",
