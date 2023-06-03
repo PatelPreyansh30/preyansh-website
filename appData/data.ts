@@ -1,3 +1,5 @@
+import { oyebusyDairy } from "./diary";
+
 export const firstIntroHeadings = [
   "ReactJs Developer",
   "Python Developer",
@@ -126,5 +128,6 @@ export const experianceItems = [
     learnings:
       "During the training period of internship, I learn ReactJs in detail and gain knowledge of other library like Material UI, Redux, Redux Toolkit, etc.\nIn this I worked on Admin Panel of the company and create UI based on Figma, create reuseful components, how to manage state for web app.",
     isCompleted: true,
+    dairyData: oyebusyDairy,
   },
 ];
