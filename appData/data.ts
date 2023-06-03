@@ -1,3 +1,5 @@
+import { oyebusyDairy } from "./diary";
+
 export const firstIntroHeadings = [
   "ReactJs Developer",
   "Python Developer",
@@ -82,7 +84,8 @@ export const skillSet = [
 export const projectItems = [
   {
     title: "E Commerce Web-App",
-    technology: "Skills: ReactJS, Typescript, Material Ui, Tailwind CSS, Python(Flask)",
+    technology:
+      "Skills: ReactJS, Typescript, Material Ui, Tailwind CSS, Python(Flask)",
     description:
       "This web app copy of e-commerce website in where you will show products, buy a product, manage your user settings, and many more.\n\nI handle the some part of backend and build some useful APIs in Python(Flask).\n\nAlso, handle some frontend part for creating amazing UI for smooth user experiance.",
     liveLink: "",
@@ -114,5 +117,17 @@ export const projectItems = [
     description:
       "This website was created for the silver oak cybersec club organized by IEEE silver oak group.",
     liveLink: "https://ieee-sou-cybersec-event.web.app/",
+  },
+];
+
+export const experianceItems = [
+  {
+    position: "ReactJS Developer Intern",
+    company: "Oyebusy Pvt. Ltd.",
+    duration: "AUGUST 2022 - FEBRUARY 2023",
+    learnings:
+      "During the training period of internship, I learn ReactJs in detail and gain knowledge of other library like Material UI, Redux, Redux Toolkit, etc.\nIn this I worked on Admin Panel of the company and create UI based on Figma, create reuseful components, how to manage state for web app.",
+    isCompleted: true,
+    dairyData: oyebusyDairy,
   },
 ];

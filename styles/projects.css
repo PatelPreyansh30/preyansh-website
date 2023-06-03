@@ -15,8 +15,10 @@
 }
 
 .project-card-link {
+    margin-top: 5px;
     color: rgb(173, 22, 173);
     font-size: 15px;
+    cursor: pointer;
 }
 
 .project-card-link:hover {
