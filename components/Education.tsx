@@ -1,5 +1,6 @@
 import React from "react";
 import { educationItems, experianceItems } from "../appData/data";
+import ExtraExperianceInfoPopup from "./ExtraExperianceInfoPopup";
 
 const Education = () => {
   return (
@@ -15,10 +16,14 @@ const Education = () => {
             <p className="h3-bold-font">{item.company}</p>
             <p className="education-item-date">{item.duration}</p>
             {item.learnings.split("\n").map((learningItem, index) => (
-              <li className="h3-font" key={`experiance-learning-item-index:${index}`}>
+              <li
+                className="h3-font"
+                key={`experiance-learning-item-index:${index}`}
+              >
                 {learningItem}
               </li>
             ))}
+            <ExtraExperianceInfoPopup isCompleted={item.isCompleted} extraData={item.dairyData} />
           </div>
         ))}
       </div>

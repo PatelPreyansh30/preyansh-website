@@ -154,6 +154,10 @@
     color: rgb(173, 22, 173);
 }
 
+.red-font {
+    color: red;
+}
+
 .white-font {
     color: white;
 }
@@ -161,6 +165,19 @@
 /* Background Color */
 .bg-white {
     background-color: #fff;
+}
+
+.bg-purple {
+    background-color: rgb(173, 22, 173);
+}
+
+/* Border */
+.border-bottom-purple {
+    border-bottom: 1px solid rgb(173, 22, 173);
+}
+
+.border-fit-content {
+    width: fit-content;
 }
 
 /* Font */
@@ -182,4 +199,9 @@
 .h3-font {
     font-size: 15px;
     font-weight: 400;
+}
+
+/* Margin */
+.mb-5px{
+    margin-bottom: 5px;
 }
