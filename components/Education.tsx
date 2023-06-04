@@ -23,7 +23,7 @@ const Education = () => {
                 {learningItem}
               </li>
             ))}
-            <ExtraExperianceInfoPopup isCompleted={item.isCompleted} extraData={item.dairyData} />
+            <ExtraExperianceInfoPopup isCompleted={item.isCompleted} company={item.company} position={item.position} extraData={item.dairyData} />
           </div>
         ))}
       </div>

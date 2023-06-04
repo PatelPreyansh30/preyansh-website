@@ -3,6 +3,8 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { CSSTransition } from "react-transition-group";
 
 const Modal = (props: {
+  company: string;
+  position: string;
   data: {
     date: string;
     work: string | null;
@@ -19,7 +21,9 @@ const Modal = (props: {
       <div className="modal" onClick={() => props.setIsOpen(false)}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <div className="modal-heading bg-purple white-font">
-            <h3>Title</h3>
+            <h3>
+              {props.company} - {props.position}
+            </h3>
             <AiOutlineCloseCircle
               className="pointer"
               style={{ fontSize: "30px" }}
@@ -61,6 +65,8 @@ const Modal = (props: {
 
 const ExtraExperianceInfoPopup = (props: {
   isCompleted: boolean;
+  company: string;
+  position: string;
   extraData: { date: string; work: string | null }[];
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,9 +76,15 @@ const ExtraExperianceInfoPopup = (props: {
       {props.isCompleted && (
         <>
           <p className="project-card-link" onClick={() => setIsOpen(true)}>
-            View Details
+            View daily details
           </p>
-          <Modal data={props.extraData} isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Modal
+            data={props.extraData}
+            company={props.company}
+            position={props.position}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
         </>
       )}
     </div>
