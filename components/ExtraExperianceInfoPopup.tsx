@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { CSSTransition } from "react-transition-group";
 
@@ -12,6 +13,18 @@ const Modal = (props: {
   isOpen: boolean;
   setIsOpen: any;
 }) => {
+  useEffect(() => {
+    const handlePopstate = () => {
+      props.setIsOpen(false);
+    };
+
+    window.onpopstate = handlePopstate;
+
+    return () => {
+      window.onpopstate = null;
+    };
+  }, [props]);
+
   return (
     <CSSTransition
       in={props.isOpen}
