@@ -31,7 +31,7 @@ export const educationItems = [
     eResult: "Percentile Rank: 88.39",
   },
   {
-    eType: "12th(SSC)",
+    eType: "10th(SSC)",
     eName: "Gyanda Girls High School, Ghatlodiya, Ahmedabad",
     eYear: "2017-2018",
     eResult: "Percentile Rank: 98.37",
