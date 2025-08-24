@@ -8,7 +8,7 @@ const Projects = () => {
       <p className="h1-font" style={{ margin: "20px" }}>
         Projects
       </p>
-      <div className="flex flex-direction-column">
+      <div className="project-sec">
         {projectItems.map((item, index) => (
           <div className="project-sec-item-box" key={`projectItems:${index}`}>
             <p className="h2-font purple-font">{item.title}</p>
@@ -18,13 +18,13 @@ const Projects = () => {
               </p>
             ))}
             <p className="education-item-date">{item.technology}</p>
-            <Link
+            {/* <Link
               href={item.liveLink}
               target="_blank"
               className="project-card-link"
             >
               Show More
-            </Link>
+            </Link> */}
           </div>
         ))}
       </div>

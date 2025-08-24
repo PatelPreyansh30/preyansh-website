@@ -1,98 +1,114 @@
 .first-aboute-me-main {
-    background: url("../public/images/2.jpg") repeat fixed 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  background: url("../public/images/2.jpg") repeat fixed 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .first-about-me-icons {
-    margin: 0 10px;
-    font-size: 25px;
+  margin: 0 10px;
+  font-size: 25px;
 }
 
 .first-about-me-icons:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 .aboutme-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  padding: 30px 70px;
+}
+
+.aboutme-main > p {
+  width: 100%;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-6px {
+  margin-bottom: 6px;
+}
+
+.aboutme-main > li {
+  width: 100%;
 }
 
 .aboute-me-skill-box {
-    padding: 10px 20px;
-    width: 150px;
-    height: 80px;
-    flex: 5 20%;
+  padding: 10px 20px;
+  width: 150px;
+  height: 80px;
+  flex: 5 20%;
 }
 
 .aboute-me-skill-full-width {
-    width: 100%;
-    background-color: gainsboro;
+  width: 100%;
+  background-color: gainsboro;
 }
 
 .aboute-me-skill-width {
-    margin: 2px 0;
-    padding: 0 6px 0 0;
-    text-align: right;
-    border-radius: 0 10px 10px 0;
-    color: white;
-    background-color: rgb(173, 22, 173);
+  margin: 2px 0;
+  padding: 0 6px 0 0;
+  text-align: right;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  background-color: rgb(173, 22, 173);
 }
 
 @media screen and (max-width: 768px) {
-    .first-aboute-me-main {
-        text-align: center;
-    }
+  .first-aboute-me-main {
+    text-align: center;
+  }
 
-    .aboutme-main {
-        padding: 30px 20px;
-    }
+  .aboutme-main {
+    padding: 30px 20px;
+  }
 }
 
 @media screen and (max-width: 420px) and (min-width: 300px) {
-    .aboute-me-skill-box {
-        flex: 2 50%;
-    }
+  .aboute-me-skill-box {
+    flex: 2 50%;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 421px) {
-    .aboute-me-skill-box {
-        flex: 3 33%;
-    }
+  .aboute-me-skill-box {
+    flex: 3 33%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .aboute-me-skill-box {
-        flex: 5 20%;
-    }
+  .aboute-me-skill-box {
+    flex: 5 20%;
+  }
 }
 
 /* widths */
 .width-95 {
-    width: 95%;
+  width: 95%;
 }
 
 .width-90 {
-    width: 90%;
+  width: 90%;
 }
 
 .width-85 {
-    width: 85%;
+  width: 85%;
 }
 
 .width-80 {
-    width: 80%;
+  width: 80%;
 }
 
 .width-70 {
-    width: 70%;
+  width: 70%;
 }
