@@ -1,14 +1,14 @@
-import { oyebusyDairy } from "./diary";
-
 export const firstIntroHeadings = [
   "ReactJs Developer",
   "Python Developer",
-  "Web Developer",
+  "Java Developer",
+  "Angular Developer",
   "Full Stack Developer",
 ];
 
 export const items = [
   { label: "Home", link: "#" },
+  { label: "Experiance", link: "#experiance" },
   { label: "Projects", link: "#projects" },
   { label: "Education", link: "#education" },
   { label: "Contact", link: "#contact" },
@@ -83,51 +83,66 @@ export const skillSet = [
 
 export const projectItems = [
   {
-    title: "E Commerce Web-App",
+    title: "Safety Hazzard Detection for Oil Industry",
     technology:
-      "Skills: ReactJS, Typescript, Material Ui, Tailwind CSS, Python(Flask)",
+      "Skills: Flask, Machine Learning, Artificial Intelligence, Object Detection",
     description:
-      "This web app copy of e-commerce website in where you will show products, buy a product, manage your user settings, and many more.\n\nI handle the some part of backend and build some useful APIs in Python(Flask).\n\nAlso, handle some frontend part for creating amazing UI for smooth user experiance.",
+      "Developed an AI-powered system to detect potential safety hazards in oil industry environments using machine learning/computer vision techniques.\nThe solution helps in real-time monitoring, risk prevention, and ensuring workplace safety compliance.",
+    liveLink: "",
+  },
+  {
+    title: "Hotel Management System",
+    technology: "Skills: Spring Boot, Angular, MySQL",
+    description:
+      "Developed a web application to manage hotel operations, including room booking, customer details, check-in/check-out, and billing.\nImplemented both frontend UI for smooth user interaction and backend logic for efficient data handling.",
+    liveLink: "",
+  },
+  {
+    title: "E Commerce Web-App",
+    technology: "Skills: ReactJS, Python(Flask), MySQL",
+    description:
+      "Built a full-stack e-commerce platform with features like product browsing, purchase flow, and user settings management.\nContributed to the backend by developing RESTful APIs in Python (Flask) and worked on the frontend to design a smooth, user-friendly UI for better customer experience.",
     liveLink: "",
   },
   {
     title: "JSON To UI Converter",
     technology: "Skills: ReactJS, HTML, CSS, Typescript",
     description:
-      "This web app convert JSON data into visible UI parts.\n\nIt takes specific JSON data that helps to build the UI.",
+      "Developed a web application that converts structured JSON data into dynamic, visible UI components, enabling automated UI generation based on predefined JSON inputs.",
     liveLink: "https://json-to-ui-converter.vercel.app/",
   },
   {
     title: "Expense Management System",
-    technology: "Skills: VueJs, HTML, CSS, Axios",
+    technology: "Skills: VueJs, HTML, CSS",
     description:
-      "This project was created at a hackathon. In this project, I create the frontend part of the web app in VueJS and I handle the API integration part.\n\nThis is used to track users finances efficiently and remind them of their budget on a daily basis.",
+      "Built the frontend using Vue.js and implemented API integrations for real-time data handling.\nThe app helps users track finances efficiently and receive daily budget reminders to manage expenses effectively.",
     liveLink: "https://github.com/PatelPreyansh30/expense-management-system",
-  },
-  {
-    title: "IEEE SOU Website Updation",
-    technology: "Skills: Debugging, VueJs, HTML, CSS, Firebase",
-    description:
-      "This website was created by our seniors and now we are tasked with updating this website and fixing bugs.",
-    liveLink: "https://ieee-sou-cybersec-event.web.app/",
-  },
-  {
-    title: "Cybersec Club Website",
-    technology: "Skills: ReactJs, HTML, CSS",
-    description:
-      "This website was created for the silver oak cybersec club organized by IEEE silver oak group.",
-    liveLink: "https://ieee-sou-cybersec-event.web.app/",
   },
 ];
 
 export const experianceItems = [
   {
+    position: "Full Stack Developer",
+    company: "Tata Consulatancy Services Ltd.",
+    duration: "JANUARY 2025 - PRESENT",
+    learnings:
+      "Working as a Full Stack Developer with primary focus on Angular (frontend) and Spring Boot (backend).\nDeveloping and maintaining scalable enterprise applications with a strong emphasis on performance, security, and clean code practices.\nBuilding responsive, user-friendly web applications using Angular, TypeScript, HTML5, and CSS3.\nDesigning and implementing RESTful APIs and microservices using Spring Boot and Java.\nIntegrated frontend with backend services, ensuring seamless data flow and state management.\nOptimized application performance through lazy loading, caching, and efficient API handling.\nWriting unit tests (Jasmine, JUnit) and participating in code reviews to maintain high-quality standards.\nCollaborating with cross-functional teams in an Agile/Scrum environment to deliver projects within deadlines.\nHands-on experience with version control (Git), CI/CD pipelines, and cloud deployment environments.",
+    isCompleted: false,
+  },
+  {
+    position: "Web Developer",
+    company: "Cybercom Creation Ltd.",
+    duration: "JANUARY 2024 - JUNE 2024",
+    learnings:
+      "Gained hands-on experience in developing, customizing, and maintaining Magento-based eCommerce applications.\nImplemented and optimized custom modules, themes, and extensions to meet business requirements.\nWorked on MVC design pattern, ensuring clean, scalable, and maintainable code.\nCollaborated with senior developers on bug fixing, performance optimization, and database management (MySQL).\nImproved skills in PHP, Magento 2, HTML, CSS, JavaScript, and object-oriented programming (OOP).\nLearned and applied best practices for version control (Git) and teamwork in an agile development environment.",
+    isCompleted: true,
+  },
+  {
     position: "ReactJS Developer Intern",
     company: "Oyebusy Pvt. Ltd.",
     duration: "AUGUST 2022 - FEBRUARY 2023",
     learnings:
-      "During the training period of internship, I learn ReactJs in detail and gain knowledge of other library like Material UI, Redux, Redux Toolkit, etc.\nIn this I worked on Admin Panel of the company and create UI based on Figma, create reuseful components, how to manage state for web app.",
+      "Developed responsive, user-friendly dashboards and interfaces using React.js, JavaScript (ES6+), HTML5, and CSS3.\nWorked with state management (Redux/Context API) to handle complex data flows within the admin panel.\nIntegrated RESTful APIs for dynamic data rendering and improved backend communication.\nImplemented reusable components and modular code structure to improve maintainability and scalability.\nCollaborated with the team on bug fixing, feature enhancement, and performance optimization of the admin panel.\nGained experience with version control (Git) and working in an Agile/Scrum environment.",
     isCompleted: true,
-    dairyData: oyebusyDairy,
   },
 ];

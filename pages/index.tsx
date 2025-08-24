@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Interest from "../components/Interest";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
+import Experience from "../components/Experiance";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutMe />
       <Interest />
       <Education />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

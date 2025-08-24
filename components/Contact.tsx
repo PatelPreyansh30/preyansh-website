@@ -109,7 +109,7 @@ const Contact = () => {
             <IoIosMail /> patelpreyansh3011@gmail.com
           </p>
           <p className="contact-sub-sec-text">
-            <IoMdCall /> +91-123-456-7890
+            <IoMdCall /> +91-8401420227
           </p>
           <p className="contact-sub-sec-text">
             <IoMdInformationCircleOutline /> Download Resume
